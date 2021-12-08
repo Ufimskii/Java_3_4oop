@@ -62,9 +62,8 @@ class FilmPosterManagerTest {
 
         FilmPoster[] actual = manager.getLastFilms();
         FilmPoster[] expected = new FilmPoster[]{
-                movie12, movie11, movie10, movie09,
-                movie08, movie07, movie06, movie05,
-                movie04, movie03, movie02, movie01
+                movie12, movie11, movie10, movie09, movie08,
+                movie07, movie06, movie05, movie04, movie03
         };
 
         assertArrayEquals(expected, actual);
