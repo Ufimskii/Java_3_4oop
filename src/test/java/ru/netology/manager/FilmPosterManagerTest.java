@@ -1,7 +1,6 @@
-package ru.netology.domain.manager;
+package ru.netology.manager;
 
 import org.junit.jupiter.api.Test;
-import ru.netology.domain.FilmPoster;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -9,7 +8,7 @@ class FilmPosterManagerTest {
     FilmPosterManager manager = new FilmPosterManager(10);
 
     @Test
-    void shoulPosterEmpty() {
+    void shouldPosterEmpty() {
 
         FilmPoster[] actual = manager.getLastFilms();
         FilmPoster[] expected = new FilmPoster[]{};

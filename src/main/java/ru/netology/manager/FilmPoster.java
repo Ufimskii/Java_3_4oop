@@ -1,4 +1,4 @@
-package ru.netology.domain;
+package ru.netology.manager;
 
 public class FilmPoster {
     private int id;
@@ -6,13 +6,12 @@ public class FilmPoster {
     private String name;
     private String genre;
 
-    public FilmPoster(int id, String imageUrl,String name, String genre) {
+    public FilmPoster(int id, String imageUrl, String name, String genre) {
         this.id = id;
         this.imageUrl = imageUrl;
         this.name = name;
         this.genre = genre;
     }
-
 
     public int getId() {
         return id;

@@ -1,6 +1,4 @@
-package ru.netology.domain.manager;
-
-import ru.netology.domain.FilmPoster;
+package ru.netology.manager;
 
 public class FilmPosterManager {
     private FilmPoster[] items = new FilmPoster[0];
@@ -8,6 +6,9 @@ public class FilmPosterManager {
 
     public FilmPosterManager(int returnFilms) {
         this.returnFilms = returnFilms;
+    }
+
+    public FilmPosterManager() {
     }
 
     public void add(FilmPoster item) {
@@ -25,7 +26,7 @@ public class FilmPosterManager {
             length = items.length;
         }
 
-        FilmPoster[] result = new FilmPoster[items.length];
+        FilmPoster[] result = new FilmPoster[length];
 
         for (int i = 0; i < result.length; i++) {
             int index = items.length - i - 1;
